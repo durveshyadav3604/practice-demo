@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Styled HTML Table Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Users — Example Styled Table</h1>
+      <p class="lead">A responsive, accessible HTML table with CSS-only styling: sticky header, zebra rows, hover states and compact mode.</p>
+
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:12px">
+        <label class="muted">Show compact:</label>
+        <input id="compactToggle" type="checkbox" />
+      </div>
+
+      <div class="table-wrap">
+        <table id="usersTable" class="compact">
+          <thead>
+            <tr>
+              <th class="col-id">#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Joined</th>
+              <th class="col-actions">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr tabindex="0">
+              <td class="muted">1</td>
+              <td><strong>Priya Sharma</strong><div class="muted small">Mumbai, India</div></td>
+              <td>priya.sharma@example.com</td>
+              <td>Developer</td>
+              <td class="muted">2024-03-18</td>
+              <td class="col-actions"><span class="badge">Active</span></td>
+            </tr>
+            <tr>
+              <td class="muted">2</td>
+              <td><strong>Ravi Patel</strong><div class="muted small">Ahmedabad</div></td>
+              <td>ravi.patel@example.com</td>
+              <td>Designer</td>
+              <td class="muted">2023-11-06</td>
+              <td class="col-actions"><span class="badge green">Invited</span></td>
+            </tr>
+            <tr>
+              <td class="muted">3</td>
+              <td><strong>Ayesha Khan</strong><div class="muted small">Bengaluru</div></td>
+              <td>ayesha.khan@example.com</td>
+              <td>Product</td>
+              <td class="muted">2022-08-21</td>
+              <td class="col-actions"><span class="badge">Active</span></td>
+            </tr>
+            <tr>
+              <td class="muted">4</td>
+              <td><strong>Arjun Verma</strong><div class="muted small">Pune</div></td>
+              <td>arjun.verma@example.com</td>
+              <td>QA</td>
+              <td class="muted">2024-06-01</td>
+              <td class="col-actions"><span class="badge orange">Pending</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="note">Tip: Remove the <code>min-width</code> on the table to let columns wrap instead of scrolling; add JavaScript if you want sorting or filtering.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
